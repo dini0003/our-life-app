@@ -29,7 +29,12 @@ export default function Home() {
     return (
       <div style={{ maxWidth: '400px', margin: '100px auto', padding: '20px' }}>
         <h1 style={{ textAlign: 'center', marginBottom: '30px' }}>Our Life App ❤️</h1>
-        <Auth supabaseClient={supabase} appearance={{ theme: ThemeSupa }} providers={[]} />
+        <Auth 
+          supabaseClient={supabase} 
+          appearance={{ theme: ThemeSupa }} 
+          providers={['google']}
+          redirectTo={window.location.origin}
+        />
       </div>
     )
   }

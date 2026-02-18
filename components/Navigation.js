@@ -204,11 +204,23 @@ export default function Navigation() {
           <span style={{ fontSize: '12px', marginTop: '4px' }}>Spese</span>
         </button>
 
-        <button
+              <button
           onClick={() => alert('Funzione profilo in arrivo!')}
           style={{
             background: 'none',
             border: 'none',
             padding: '8px',
             cursor: 'pointer',
-            di
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            color: '#666'
+          }}
+        >
+          <span style={{ fontSize: '24px' }}>👤</span>
+          <span style={{ fontSize: '12px', marginTop: '4px' }}>Profilo</span>
+        </button>
+      </div>
+    </>
+  )
+}

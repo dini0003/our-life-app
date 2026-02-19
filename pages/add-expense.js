@@ -253,7 +253,7 @@ export default function AddExpense() {
         )}
       </div>
 
-      {/* Note */}
+         {/* Note */}
       <div style={{ marginBottom: '30px' }}>
         <label style={{ display: 'block', marginBottom: '8px', fontWeight: '500' }}>
           Note (opzionale)
@@ -265,4 +265,34 @@ export default function AddExpense() {
           rows={2}
           style={{
             width: '100%',
-            paddi
+            padding: '12px',
+            borderRadius: '8px',
+            border: '1px solid #ddd',
+            fontSize: '14px',
+            boxSizing: 'border-box'
+          }}
+        />
+      </div>
+
+      {/* Bottone Salva */}
+      <button
+        onClick={handleSubmit}
+        disabled={loading}
+        style={{
+          width: '100%',
+          padding: '16px',
+          background: loading ? '#ccc' : '#007bff',
+          color: 'white',
+          border: 'none',
+          borderRadius: '12px',
+          fontSize: '16px',
+          fontWeight: '600',
+          cursor: loading ? 'not-allowed' : 'pointer'
+        }}
+      >
+        {loading ? 'Salvando...' : 'Salva Spesa'}
+      </button>
+
+    </div>
+  )
+}

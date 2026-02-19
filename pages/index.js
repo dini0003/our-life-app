@@ -57,3 +57,7 @@ export default function Home() {
     </div>
   )
 }
+
+const [balance, setBalance] = useState(0)
+const [balanceLoading, setBalanceLoading] = useState(true)
+

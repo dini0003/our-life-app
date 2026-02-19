@@ -57,10 +57,10 @@ export default function Navigation() {
               <div style={{ fontSize: '14px', color: '#666' }}>Comprare, fare, prenotare...</div>
             </button>
 
-            <button
+           <button
               onClick={() => {
                 setShowAddMenu(false)
-                alert('Funzione spese in arrivo!')
+                router.push('/add-expense')
               }}
               style={{
                 width: '100%',
@@ -183,13 +183,14 @@ export default function Navigation() {
             boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
             transform: 'translateY(-8px)'
           }}
-        >
+    >
           ➕
         </button>
 
         <button
-          onClick={() => alert('Funzione spese in arrivo!')}
+          onClick={() => router.push('/expenses')}
           style={{
+            
             background: 'none',
             border: 'none',
             padding: '8px',
